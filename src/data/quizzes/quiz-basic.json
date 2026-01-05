@@ -1,0 +1,31 @@
+{
+  "slug": "js-basic",
+  "title": "Quiz Edukatif 3R",
+  "questions": [
+    {
+      "text": "Apa kepanjangan dari 3R?",
+      "options": ["Reduce, Reuse, Recycle", "Read, Run, Rest", "Right, Ready, Run", "Reuse, Repair, Remove"],
+      "answer": 0
+    },
+    {
+      "text": "Kegiatan mengurangi penggunaan plastik sekali pakai disebut …",
+      "options": ["Reuse", "Recycle", "Reduce", "Remove"],
+      "answer": 2
+    },
+    {
+      "text": "Menggunakan botol minum yang sama setiap hari termasuk contoh ",
+      "options": ["Reduce", "Reuse", "Recycle", "Replace"],
+      "answer": 1
+    },
+    {
+      "text": "Mengolah sampah plastik menjadi barang baru disebut …",
+      "options": ["Reduce", "Reuse", "Recycle", "Reject"],
+      "answer": 2
+    },
+    {
+      "text": "Manakah contoh perilaku menjaga lingkungan di sekolah?",
+      "options": ["Membuang sampah sembarangan", "Membakar sampah di kelas", "Menggunakan kembali kertas yang masih bisa dipakai", "Membiarkan sampah menumpuk"],
+      "answer": 2
+    }
+  ]
+}

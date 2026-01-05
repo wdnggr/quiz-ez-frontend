@@ -1,0 +1,19 @@
+---
+const { title, slug, meta } = Astro.props;
+---
+
+<article class="border rounded-xl p-6 shadow-sm hover:shadow-md transition">
+    <header class="mb-4">
+        <h3 class="text-lg font-semibold">{title}</h3>
+        <p class="text-sm text-gray-500">{meta}</p>
+    </header>
+
+    <footer>
+        <a
+                href={`/quiz/${slug}`}
+                class="inline-block px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
+        >
+            Start Quiz
+        </a>
+    </footer>
+</article>

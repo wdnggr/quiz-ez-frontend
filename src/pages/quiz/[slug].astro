@@ -1,0 +1,26 @@
+---
+import QuizLayout from "../../layout/QuizLayout.astro";
+import quizzes from "../../data/quizzes";
+
+// 1️⃣ WAJIB untuk dynamic route
+export async function getStaticPaths() {
+    return quizzes.map((quiz) => ({
+        params: { slug: quiz.slug },
+        props: { quiz }
+    }));
+}
+
+// 2️⃣ Ambil quiz dari props
+const { quiz } = Astro.props;
+---
+
+<QuizLayout title={quiz.title} />
+
+<!-- 3️⃣ Lempar data ke client -->
+<script>
+    window.__QUIZ__ = JSON.parse(
+        `{JSON.stringify(quiz)}`
+    );
+</script>
+
+<script src="../../scripts/quiz.js"></script>

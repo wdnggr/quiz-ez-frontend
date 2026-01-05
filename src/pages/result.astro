@@ -1,0 +1,42 @@
+---
+import quiz from "../data/quizzes/quiz-basic.json";
+---
+
+<section class="max-w-md mx-auto px-6 py-12 text-center">
+    <h1 class="text-3xl font-bold mb-6">Quiz Result</h1>
+
+    <p id="name" class="text-lg mb-2"></p>
+    <p id="score" class="text-xl font-semibold"></p>
+
+    <a
+            href="/"
+            class="inline-block mt-8 px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
+    >
+        Back to Home
+    </a>
+</section>
+
+<script>
+    const slug = "js-basic";
+
+    const quiz = await import("../data/quizzes/quiz-basic.json");
+    const answers = JSON.parse(
+        localStorage.getItem(`quiz:answers:${slug}`)
+    ) || [];
+
+    const username =
+        localStorage.getItem("quiz:username") || "Guest";
+
+    let score = 0;
+    quiz.default.questions.forEach((q, i) => {
+        if (answers[i] === q.answer) score++;
+    });
+
+    localStorage.setItem(`quiz:score:${slug}`, score);
+
+    document.getElementById("name").textContent =
+        `Name: ${username}`;
+
+    document.getElementById("score").textContent =
+        `Score: ${score} / ${quiz.default.questions.length}`;
+</script>

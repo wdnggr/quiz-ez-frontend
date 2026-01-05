@@ -1,21 +1,29 @@
 ---
 import BaseLayout from '../layout/BaseLayout.astro'
+import NameInput from "../components/NameInput.astro";
+import QuizCard from "../components/QuizCard.astro";
 ---
 
 <BaseLayout>
-	<section class="flex flex-col py-12 gap-6">
-		<h2 class="text-4xl font-bold">List Quiz</h2>
-		<article class="border-2 border-gray-300 rounded-md flex flex-row gap-4 w-full">
-			<section class="flex flex-col p-6 bg-blue-500 rounded-l-md items-center">
-				<h2 class="text-2xl text-white">Score</h2>
-				<h2 class="text-4xl text-white">0</h2>
-			</section>
-			<section class="flex flex-col justify-center px-6 py-2">
-				<h2 class="text-2xl">Title Quiz</h2>
-				<p>Lorem Ipsum Dolor Sit Amet</p>
-			</section>
-		</article>
+	<section class="max-w-4xl mx-auto px-6 py-10">
+		<h1 class="text-3xl font-bold mb-6">Quiz App</h1>
+
+		<NameInput />
+
+		<section aria-labelledby="assigned-quizzes">
+			<h2 id="assigned-quizzes" class="text-xl font-semibold mb-4">
+				Assigned Quizzes
+			</h2>
+
+			<ul class="grid sm:grid-cols-2 gap-6">
+				<li>
+					<QuizCard
+						title="JavaScript Basic"
+						slug="js-basic"
+						meta="2 questions • beginner"
+					/>
+				</li>
+			</ul>
+		</section>
 	</section>
-
-
 </BaseLayout>
