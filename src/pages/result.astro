@@ -1,23 +1,24 @@
 ---
-import quiz from "../data/quizzes/quiz-basic.json";
+import BaseLayout from "../layout/BaseLayout.astro";
 ---
+<BaseLayout>
+    <section class="max-w-md mx-auto px-6 py-12 text-center">
+        <h1 class="text-3xl font-bold mb-6">Quiz Result</h1>
 
-<section class="max-w-md mx-auto px-6 py-12 text-center">
-    <h1 class="text-3xl font-bold mb-6">Quiz Result</h1>
+        <p id="name" class="text-lg mb-2"></p>
+        <p id="score" class="text-xl font-semibold"></p>
 
-    <p id="name" class="text-lg mb-2"></p>
-    <p id="score" class="text-xl font-semibold"></p>
-
-    <a
-            href="/"
-            class="inline-block mt-8 px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
-    >
-        Back to Home
-    </a>
-</section>
+        <a
+                href="/"
+                class="inline-block mt-8 px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
+        >
+            Back to Home
+        </a>
+    </section>
+</BaseLayout>
 
 <script>
-    const slug = "js-basic";
+    const slug = "quis-edukatif-3r";
 
     const quiz = await import("../data/quizzes/quiz-basic.json");
     const answers = JSON.parse(
