@@ -1,4 +1,5 @@
 ---
+import Image from "astro/components/Image.astro";
 import BaseLayout from "./BaseLayout.astro";
 const { title } = Astro.props;
 ---
@@ -10,6 +11,7 @@ const { title } = Astro.props;
         </header>
 
         <section class="mb-6">
+            <img id="image" class="w-full" src="/soal5.jpeg" alt=""/>
             <h3 id="question" class="text-lg font-medium mb-4"></h3>
             <form id="options" class="space-y-3"></form>
         </section>

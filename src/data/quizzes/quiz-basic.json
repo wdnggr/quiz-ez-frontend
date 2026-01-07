@@ -4,26 +4,31 @@
   "questions": [
     {
       "text": "Apa kepanjangan dari 3R?",
+      "image": "/soal1.jpeg",
       "options": ["Reduce, Reuse, Recycle", "Read, Run, Rest", "Right, Ready, Run", "Reuse, Repair, Remove"],
       "answer": 0
     },
     {
       "text": "Kegiatan mengurangi penggunaan plastik sekali pakai disebut …",
+      "image": "/soal2.jpeg",
       "options": ["Reuse", "Recycle", "Reduce", "Remove"],
       "answer": 2
     },
     {
       "text": "Menggunakan botol minum yang sama setiap hari termasuk contoh ",
+      "image": "/soal3.jpeg",
       "options": ["Reduce", "Reuse", "Recycle", "Replace"],
       "answer": 1
     },
     {
       "text": "Mengolah sampah plastik menjadi barang baru disebut …",
+      "image": "/soal4.jpeg",
       "options": ["Reduce", "Reuse", "Recycle", "Reject"],
       "answer": 2
     },
     {
       "text": "Manakah contoh perilaku menjaga lingkungan di sekolah?",
+      "image": "/soal5.jpeg",
       "options": ["Membuang sampah sembarangan", "Membakar sampah di kelas", "Menggunakan kembali kertas yang masih bisa dipakai", "Membiarkan sampah menumpuk"],
       "answer": 2
     }

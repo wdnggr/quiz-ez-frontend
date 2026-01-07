@@ -5,6 +5,7 @@ const slug = quiz.slug;
 let index = 0;
 const answers = [];
 
+const imgEl = document.querySelector("img");
 const questionEl = document.getElementById("question");
 const optionsEl = document.getElementById("options");
 const nextBtn = document.getElementById("next");
@@ -14,6 +15,7 @@ function render() {
     const q = quiz.questions[index];
 
     questionEl.textContent = q.text;
+    imgEl.src = q.image
     progressEl.textContent = `Question ${index + 1} of ${quiz.questions.length}`;
 
     optionsEl.innerHTML = "";
